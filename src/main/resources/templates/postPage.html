@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+id:
+<td th:text="${post?.getId()}"/>
+title:
+<td th:text="${post?.getTitle()}"/>
+text:
+<td th:text="${post?.getText()}"/>
+user:
+<td th:text="${post?.getUserDto().getEmail()}"/>
+likes:
+<td th:text="${post?.getLikeCount()}"/>
+
+</body>
+</html>
